@@ -68,16 +68,16 @@
     border-radius: 8px; }
 
 .product {
-  max-width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
+  justify-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  grid-template-columns: repeat(4, 248px);
+  grid-template-rows: repeat(2, 453px);
   background-color: #fff; }
   .product__card {
     width: 200px;
@@ -91,7 +91,6 @@
     border: 1px solid #f3f3f3;
     border-radius: 5px;
     padding: 30px 14px 14px;
-    margin: 0 24px 51px;
     background-color: #fff; }
   .product__img {
     display: block;
